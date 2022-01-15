@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Space Mono", monospace;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    letter-spacing: 6px;
+}
+
+.card {
+    min-width: 700px;
+    max-width: 800px;
+    margin: 42px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 28px 32px;
+    display: flex;
+    gap: 0 32px;
+}
+
+.card > * {
+    flex: 1;
+}
+
+.card__input-label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.card__input {
+    width: 100%;
+    padding: 10px 12px;
+    padding-left: 24px;
+    border: 0;
+    background-color: hsl(189, 41%, 97%);
+    background-repeat: no-repeat;
+    background-position: 12px;
+    background-size: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card__input::placeholder {
+    color: hsl(184, 14%, 56%);
+    font-weight: initial;
+}
+
+.card__input--dollar {
+    background-image: url("../images/icon-dollar.svg");
+}
+
+.card__input--person {
+    background-image: url("../images/icon-person.svg");
+}
+
+.card__tips {
+    margin: 32px 0;
+}
+
+.card__tips-label {
+    font-weight: bold;
+}
+
+.card__tips-wrapper {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.card__tips-wrapper > * {
+    flex-basis: calc(33% - 7px);
+}
+
+.card__tip {
+    display: block;
+    appearance: none;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 4px;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.card__tip--dim {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+
+.card__displays {
+    padding: 0 32px 28px 32px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__display {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.card__label {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px 0;
+}
+
+.card__label > span:first-child {
+    color: hsl(0, 0%, 100%);
+}
+
+.card__label > span:nth-child(2) {
+    color: hsl(186, 14%, 43%);
+}
+
+.card__price {
+    font-size: 38px;
+    color: hsl(172, 67%, 45%);
+    font-weight: bold;
+}
+
+.card__reset {
+    margin-top: auto;
+    padding: 12px 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: inherit;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(183, 100%, 20%);
+    border: 0;
+    border-radius: 6px;
+    appearance: none;
+}
