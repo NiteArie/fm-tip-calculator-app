@@ -55,11 +55,20 @@ body {
     font-family: inherit;
     font-size: 16px;
     font-weight: bold;
+    /* border: 2px solid transparent; */
 }
 
 .card__input::placeholder {
     color: hsl(184, 14%, 56%);
     font-weight: initial;
+}
+
+.card__input--error {
+    outline: hsl(0, 50%, 50%) solid 2px;
+}
+
+.card__input--valid {
+    outline: hsl(172, 67%, 45%) solid 2px;
 }
 
 .card__input--dollar {
@@ -101,6 +110,11 @@ body {
     background-color: hsl(183, 100%, 15%);
     color: hsl(0, 0%, 100%);
     cursor: pointer;
+}
+
+.card__tip--active {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
 }
 
 .card__tip--dim {

@@ -28,11 +28,11 @@
     <div class="card__menu">
       <div class="card__input-control">
         <label class="card__input-label">Bill</label>
-        <input class="card__input card__input--dollar" placeholder="0" dir="rtl">
+        <input class="card__input card__input--dollar js-bill" placeholder="0" dir="rtl">
       </div>
       <div class="card__tips">
         <p class="card__tips-label">Select Tip %</p>
-        <div class="card__tips-wrapper">
+        <div class="card__tips-wrapper js-tips">
           <button class="card__tip">
             5%
           </button>
@@ -40,7 +40,7 @@
           <button class="card__tip">15%</button>
           <button class="card__tip">25%</button>
           <button class="card__tip">50%</button>
-          <button class="card__tip card__tip--dim">Custom</button>
+          <button class="card__tip card__tip--dim js-tip-custom">Custom</button>
         </div>
       </div>
       <div class="card__input-control">
@@ -48,7 +48,7 @@
           <label class="card__input-label">Number of People</label>
           <span class="card__input-message"></span>
         </div>
-        <input class="card__input card__input--person" placeholder="0" dir="rtl">
+        <input class="card__input card__input--person js-people" placeholder="0" dir="rtl">
       </div>
     </div>
 
@@ -58,7 +58,7 @@
           <span>Tip Amount</span>
           <span>/ person</span>
         </p>
-        <p class="card__price">
+        <p class="card__price js-tip-per-person">
           $0.00
         </p>
       </div>
@@ -67,7 +67,7 @@
           <span>Total</span>
           <span>/ person</span>
         </p>
-        <p class="card__price">
+        <p class="card__price js-total-per-person">
           $0.00
         </p>
       </div>
