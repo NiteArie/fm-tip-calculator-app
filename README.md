@@ -1,5 +1,9 @@
 # fm-tip-calculator-app (Tip Calculator App)
 
+## Live View
+
+URL: [https://nitearie.github.io/fm-tip-calculator-app/](https://nitearie.github.io/fm-tip-calculator-app/)
+
 ## Design
 
 ![Desktop Design](./design/desktop-preview.jpg)
