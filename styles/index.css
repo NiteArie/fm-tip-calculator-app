@@ -168,4 +168,9 @@ body {
     border: 0;
     border-radius: 6px;
     appearance: none;
+    cursor: not-allowed;
+}
+
+.card__reset--active {
+    background-color: 
 }
