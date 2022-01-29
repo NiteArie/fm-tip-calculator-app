@@ -5,6 +5,7 @@
 
     const tipPerPersonNode = document.querySelector(".js-tip-per-person");
     const totalPerPersonNode = document.querySelector(".js-total-per-person");
+    const resetButtonNode = document.querySelector(".js-tip-reset");
     
     billInputNode.addEventListener("input", (event) => {
         checkInputValue(event.target)
@@ -39,6 +40,10 @@
         }
     })
 
+    resetButtonNode.addEventListener("click", (event) => {
+        resetPrice();
+    })
+
     function isAllInputsPresent() {
         return billInputNode.value && peopleInputNode.value && document.querySelector(".card__tip--active")
     }
@@ -67,6 +72,20 @@
     function displayPrice() {
         displayTipAmountPerPerson();
         displayTotalPerPerson();
+        enableResetButton();
+    }
+
+    function resetPrice() {
+        resetTipAmountPerPerson();
+        resetTotalPerPerson();
+    }
+
+    function resetTipAmountPerPerson() {
+        tipPerPersonNode.textContent = "$0.00";
+    }
+
+    function resetTotalPerPerson() {
+        totalPerPersonNode.textContent = "$0.00";
     }
 
     function checkInputValue(currentNode) {
@@ -84,6 +103,11 @@
     function round(num) {
         var m = Number((Math.abs(num) * 100).toPrecision(15));
         return Math.round(m) / 100 * Math.sign(num);
+    }
+
+    function enableResetButton() {
+        resetButtonNode.disabled = false;
+        resetButtonNode.classList.add("card__reset--active");
     }
     
 })()

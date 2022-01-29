@@ -172,5 +172,6 @@ body {
 }
 
 .card__reset--active {
-    background-color: 
+    cursor: pointer;
+    background-color: hsl(172, 67%, 45%);
 }
